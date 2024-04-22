@@ -139,10 +139,10 @@ footer {
     justify-content: center;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    text-decoration: wavy;
+    font-weight: 300;
+    font-size: 15px;
     text-align: center;
+    text-transform: capitalize;
   }
 
   .grid-item:hover .overlay {
