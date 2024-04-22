@@ -1,0 +1,212 @@
+body {
+    background-color: #222;
+    color: gold;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    padding: 20px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+}
+
+.logo img {
+    height: 50px; /* Adjust size as needed */
+    vertical-align: middle; /* Align the logo vertically */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex; /* Change to flex to align list items horizontally */
+    justify-content: flex-end; /* Align list items to the right */
+}
+
+nav ul li {
+    margin-left: 20px; /* Adjust spacing between list items */
+}
+
+nav ul li a {
+    color: gold;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: red;
+}
+
+.description {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.view img{
+    padding-left: 50px;
+
+}
+.view {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+
+}
+.view img{
+    float: right;
+}
+
+
+.calendar {
+    padding: 20px;
+    text-align: center;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.container {
+    overflow: hidden;
+
+  }
+
+  .image {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border: 8px solid green; /* Heavy border line */
+    box-shadow: 0 0 20px 5px green;
+    animation: glow 2s ease-in-out infinite alternate; /* Blinking animation */
+    display: block;
+ }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 20px 5px green;
+    }
+    100% {
+      box-shadow: 0 0 30px 10px green; /* Increase glow intensity */
+    }
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; /* Adjust the gap between pictures */
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .imagef{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease; /* Add transition for smooth hover effect */
+  }
+
+  .grid-item:hover .imagef {
+    transform: scale(1.1); /* Zoom in effect on hover */
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 70%,rgba(0,0,0,0.9) 100%); /* Adjust the gradient colors */
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Add transition for smooth hover effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: wavy;
+    text-align: center;
+  }
+
+  .grid-item:hover .overlay {
+    opacity: 1;
+  }
+  h2 {
+    background-color: yellow; 
+    color: black; 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    padding: 20px; 
+  }
+
+  h3 {
+    background-color: black; 
+    color: yellow !important; 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    padding: 20px; 
+    
+  }
+
+  .why{
+    text-align: center;
+  }
+
+  .carousel-item {
+    padding: 20px;
+    background-color: #000; 
+    color: yellow; 
+     max-width: 300px; /* Adjust the maximum width of each carousel item */
+    margin: auto; /* Center each carousel item horizontally */
+  }
+  .profile-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    margin-right: 20px;
+  }
+  .carousel-inner {
+    max-width: 300px; /* Adjust the maximum width of the carousel */
+    margin: 0 auto; /* Center the carousel horizontally */
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 15%; /* Adjust the width of carousel controls */
+  }
+
+  .container {
+    margin: 0;
+    height: 100vh; /* Set the height of the body to the full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #f0f0f0; /* Optional: Background color */
+  }
+
+  .container img {
+    max-width: 100%; /* Make sure the image doesn't exceed the viewport width */
+    max-height: 100vh; /* Limit the height of the image to 80% of the viewport height */
+  }
+  #quote{
+    text-align: center;
+    background-color: #000;
+    color: yellow;
+  }
