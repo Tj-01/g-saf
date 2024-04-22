@@ -113,6 +113,14 @@ footer {
     position: relative;
     overflow: hidden;
   }
+@media screen and (max-width: 768px) {
+    .grid-layout {
+      display: block; /* Switch to a block layout */
+    }
+
+    .grid-item {
+      margin-bottom: 20px; /* Add margin to separate list items */
+    }
 
   .imagef{
     display: block;
